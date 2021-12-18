@@ -18,6 +18,7 @@ jobs:
       - run: z ci setup-v
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v1
+        timeout-minutes: 15
   debug-macos:
     runs-on: macos-latest
     env:
@@ -30,3 +31,4 @@ jobs:
       - run: z ci setup-v
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v1
+        timeout-minutes: 15
